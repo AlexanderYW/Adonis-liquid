@@ -1,0 +1,43 @@
+{
+  "name": "adonis-liquid",
+  "version": "4.2.0",
+  "description": "Liquid templating provider for AdonisJs",
+  "keywords": "adonis, liquid, template, provider, adonisjs, liquidjs",
+  "author": "webdevian",
+  "license": "MIT",
+  "scripts": {
+    "test": "npm run lint && nyc --all mocha",
+    "mocha": "nyc --all mocha",
+    "lint": "eslint *.js test/**/*.js src/**/*.js",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "stryker": "stryker run"
+  },
+  "dependencies": {
+    "liquidjs": "^9.20.1"
+  },
+  "peerDependencies": {
+    "@adonisjs/ace": ">=4.0.7",
+    "@adonisjs/fold": ">=4.0.5",
+    "@adonisjs/framework": ">=4.0.28"
+  },
+  "devDependencies": {
+    "@adonisjs/ace": "^5.0.8",
+    "@adonisjs/fold": "^4.0.5",
+    "@adonisjs/framework": "^5.0.0",
+    "@adonisjs/sink": "^1.0.13",
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "nyc": "^15.1.0",
+    "pify": "^5.0.0",
+    "sinon": "^9.2.4",
+    "sinon-chai": "^3.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexanderYW/adonis-liquid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AlexanderYW/adonis-liquid/issues"
+  },
+  "homepage": "https://github.com/AlexanderYW/adonis-liquid#readme"
+}
