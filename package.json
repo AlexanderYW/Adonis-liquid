@@ -1,6 +1,6 @@
 {
   "name": "adonis-liquid",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Liquid templating provider for AdonisJs",
   "keywords": [
     "adonis",
