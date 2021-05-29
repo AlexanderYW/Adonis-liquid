@@ -35,18 +35,17 @@ describe('Make Liquid view command', () => {
 
   it('Generate test.liquid in resources/views', async () => {
     const handle = await makeLiquid.handle({name: 'test'}, {})
-
-    expect(handle).to.equal('resources/views/test.liquid')
+    expect(path.normalize(handle)).to.equal(path.normalize('resources/views/test.liquid'))
     expect(generateFileStub).to.be.calledWith(path.join(__dirname, '../resources/views/test.liquid'))
-    expect(consoleStub).to.be.calledWith('✔ create  resources/views/test.liquid')
+    expect(consoleStub).to.be.calledWith(`√ create  ${path.normalize('resources/views/test.liquid')}`)
   })
 
   it('Generate test.liquid in resources/views with a layout', async () => {
     const handle = await makeLiquid.handle({name: 'extender'}, {layout: 'layout.liquid'})
 
-    expect(handle).to.equal('resources/views/extender.liquid')
+    expect(handle).to.equal(path.normalize('resources/views/extender.liquid'))
     expect(generateFileStub).to.be.calledWith(path.join(__dirname, '../resources/views/extender.liquid'))
-    expect(consoleStub).to.be.calledWith('✔ create  resources/views/extender.liquid')
+    expect(consoleStub).to.be.calledWith(`√ create  ${path.normalize('resources/views/extender.liquid')}`)
   })
 
   it('Handles error ', async () => {

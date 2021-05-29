@@ -1,9 +1,16 @@
 {
   "name": "adonis-liquid",
-  "version": "4.2.0",
+  "version": "4.0.0",
   "description": "Liquid templating provider for AdonisJs",
-  "keywords": "adonis, liquid, template, provider, adonisjs, liquidjs",
-  "author": "webdevian",
+  "keywords": [
+    "adonis",
+    "liquid",
+    "template",
+    "provider",
+    "adonisjs",
+    "liquidjs"
+  ],
+  "author": "Alexander Wennerstrøm <alexanderw0310@gmail.com>",
   "license": "MIT",
   "scripts": {
     "test": "npm run lint && nyc --all mocha",
@@ -26,6 +33,7 @@
     "@adonisjs/framework": "^5.0.0",
     "@adonisjs/sink": "^1.0.13",
     "chai": "^4.2.0",
+    "eslint": "^7.27.0",
     "mocha": "^8.2.1",
     "nyc": "^15.1.0",
     "pify": "^5.0.0",
