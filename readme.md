@@ -25,12 +25,7 @@ Make sure the default edge provider (`@adonisjs/framework/providers/ViewProvider
 
 #### Compatibility
 
-*This package has been rebuilt for Adonis 4 and is incompatible with Adonis 3 and earlier. 
-For Adonis v3 install the previous version (3.01) with :*
-
-```
-npm install adonis-liquid@<4.x --save
-```
+*This package has been rebuilt for Adonis 4 and is incompatible with Adonis 3 and earlier.
 
 ## Config
 
