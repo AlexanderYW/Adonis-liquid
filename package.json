@@ -20,7 +20,7 @@
     "stryker": "stryker run"
   },
   "dependencies": {
-    "liquidjs": "^9.20.1"
+    "liquidjs": "^10.0.0"
   },
   "peerDependencies": {
     "@adonisjs/ace": ">=4.0.7",
